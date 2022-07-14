@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+
+.div1 {
+    background-image: url('../img/chatbg.png');
+    background-size: cover;
+    color: #ffffff;
+    height: 100%;
+}
+
+.heading {
+    text-align: center;
+    background-color: #323f4b;
+}
+
+h1 {
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+p {
+    padding: 3%;
+}
+
+.g2 {
+    margin-top: 8%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.sty1 {
+    text-align: right;
+    background-color: #47a3f3;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+    border-bottom-left-radius: 9px;
+}
+
+.sty2 {
+    text-align: left;
+    background-color: #52606d;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+    border-bottom-right-radius: 9px;
+}
