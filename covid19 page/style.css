@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+
+
+
+.upper {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.inner1 {
+    flex-grow: 1;
+}
+
+.inner2 {
+    flex-grow: 1;
+}
+
+.container {
+    font-family: Roboto;
+}
+
+.upper {
+    justify-content: space-between;
+}
+
+.first img {
+    flex-grow: 1;
+}
+
+.first .inner {
+    margin-left: 5%;
+    margin-right: 5%;
+    flex-grow: 1;
+}
+
+.downside div img {
+    width: 50%;
+    height: 50%;
+    position: relative;
+
+}
+
+.downside {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.first {
+    background-color: #0967d219;
+    align-items: center;
+    padding: 5%;
+    border-radius: 5%;
+}
+
+.one {
+    background-color: #3ebd93;
+    text-align: center;
+    align-items: center;
+    padding: 5%;
+    flex-grow: 1;
+    border-radius: 7%;
+}
+
+
+.two {
+    background-color: #e668a7;
+    text-align: center;
+    align-items: center;
+    padding: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    flex-grow: 1;
+    border-radius: 7%;
+}
+
+
+.three {
+    background-color: #a368fc;
+    text-align: center;
+    align-items: center;
+    padding: 5%;
+    flex-grow: 1;
+    border-radius: 7%;
+}
+
+.second {
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.second div {
+    justify-content: space-between;
+    color: white;
+}
+
+.third div img {
+    width: 50%;
+    height: 50%;
+}
+
+.third .inner {
+    background-color: #e12d3919;
+    align-items: center;
+    padding: 5%;
+    border-radius: 5%;
+}
+
+.inner div {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+h3 {
+    color: #323f4b;
+}
+
+.third .inner img {
+    flex-grow: 1;
+}
+
+.third .inner div {
+    flex-grow: 1;
+}
