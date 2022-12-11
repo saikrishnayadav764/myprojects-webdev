@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    body {
+        background-color: black;
+        color: red;
+    }
+
+    .div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+</style>
+
+<body>
+    <div class="div">
+        <form method="post" action="./post.php" name="myform2">
+            <div>
+                <h1>YOUR NAME</h1>
+                <input required name="yn" id="yn" placeholder="Enter Name" type="text">
+            </div>
+            <div>
+                <h1>ITEM NAME</h1>
+                <input required name="nm" id="nm" placeholder="Enter Name" type="text">
+            </div>
+            <div>
+                <h1>PICTURE</h1>
+                <input required type="file" name="pic">
+            </div>
+            <div>
+                <h1>YOUR PRICE</h1>
+                <input required name="price" id="price" placeholder="your price" type="number">
+            </div>
+            <div>
+                <h1>Best Price</h1>
+                <input required name="bprice" id="bprice" disabled placeholder="₹" type="number">
+            </div>
+
+            <div style="margin-top: 4%;">
+                <input required value="Post" type="submit" name="upload">
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>
