@@ -7,55 +7,53 @@ class ReviewsCarousel extends Component {
 
   moveBack = () => {
     const {reviewsList} = this.props
-    const count = reviewsList.length
-    this.setState(prevState => {
-      if (prevState.id === 0) {
-        return {id: prevState.id}
-      }
-      return {id: prevState.id - 1}
-    })
+    const {id} = this.state
+
+    if (id === 0) {
+      return
+    }
+
+    this.setState(prevState => ({id: prevState.id - 1}))
   }
-
-  // if (prevState.id === 0) {
-  //   return {id: count - 1}
-  // }
-
-  // if (prevState.id === count - 1) {
-  //   return {id: 0}
-  // }
 
   moveFront = () => {
     const {reviewsList} = this.props
+    const {id} = this.state
     const count = reviewsList.length
-    this.setState(prevState => {
-      if (prevState.id === count - 1) {
-        return {id: prevState.id}
-      }
-      return {id: prevState.id + 1}
-    })
+
+    this.setState(prevState => ({id: (prevState.id + 1) % count}))
   }
 
   render() {
     const {id} = this.state
     const {reviewsList} = this.props
-    const [result] = reviewsList.filter((item, ind) => ind === id)
+    const currentReview = reviewsList[id]
+
     return (
       <div className="container">
         <div className="wrapper">
           <h1>Reviews</h1>
           <div className="wrapper2">
-            <button data-testid="leftArrow" className="awrap">
+            <button
+              type="button"
+              data-testid="leftArrow"
+              className="awrap"
+              onClick={this.moveBack}
+            >
               <img
-                onClick={this.moveBack}
                 className="arrow"
                 alt="left arrow"
-                src="https://assets.ccbp.in/frontend/react-js/left-arrow-img.png "
+                src="https://assets.ccbp.in/frontend/react-js/left-arrow-img.png"
               />
             </button>
-            <Profile {...result} />
-            <button data-testid="rightArrow" className="awrap">
+            <Profile {...currentReview} />
+            <button
+              type="button"
+              data-testid="rightArrow"
+              className="awrap"
+              onClick={this.moveFront}
+            >
               <img
-                onClick={this.moveFront}
                 className="arrow"
                 alt="right arrow"
                 src="https://assets.ccbp.in/frontend/react-js/right-arrow-img.png"
